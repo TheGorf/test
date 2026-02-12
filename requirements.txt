@@ -1,0 +1,8 @@
+# Lambda@Edge Signature Validation Dependencies
+
+# Cryptography library for RSA signature validation
+# Note: This may require a Lambda layer due to size constraints
+cryptography==41.0.7
+
+# boto3 is provided by Lambda runtime - no need to package
+# boto3>=1.28.0

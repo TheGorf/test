@@ -1,0 +1,22 @@
+{
+  "TableName": "signature-keys",
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "key_id",
+      "AttributeType": "S"
+    }
+  ],
+  "KeySchema": [
+    {
+      "AttributeName": "key_id",
+      "KeyType": "HASH"
+    }
+  ],
+  "BillingMode": "PAY_PER_REQUEST",
+  "Tags": [
+    {
+      "Key": "Purpose",
+      "Value": "Lambda@Edge Signature Validation"
+    }
+  ]
+}
